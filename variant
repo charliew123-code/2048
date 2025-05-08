@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head><meta charset="utf-8"><title>List of 2048 variants</title>
+  <link href="main.css" rel="stylesheet" type="text/css"></head>
+  <body>
+    <div class="container">
+      <div class="heading">
+        <h1 class="title">2048 Variants</h1>
+        <p class="game-intro">These are most of the 2048 variants I have made or played.</p>
+        <div class = "variants">
+          <a href="https://play2048.co"><strong>2048</strong> Gabriele Cirulli's original 2048.</a>
+          <a href="https://charliew123-code.github.io/2048/"><strong>2048</strong> My version of 2048.</a>
+          <a href="https://1024game.org/"><strong>1024</strong> Online version of 1024 by Veewo Studio.</a>
+          <a href="http://play.threesgame.com/"><strong>Threes</strong> Online version of Threes by Asher Vollmer.</a>
+        </div>
+        <h1>My Variants</h1>
+        <div class = "variants">
+          <a href="https://charliew123-code.github.io/2048-bot/"><strong>2048-Bot</strong> A bot for 2048.</a>
+        </div>
+        <h1>Variants I have played (feel free to try them!)</h1>
+        <div class = "variants">
+          <a href="https://true65536.github.io/65536/"><strong>65536</strong> 2048 but the goal is 65536 instead of 2048, making the game much harder.</a>
+          <a href="https://cyberzhg.github.io/2048/"><strong>2147483648</strong> 8x8 board, auto move, game modes, and time trials.</a>
+          <a href="https://adamharte.github.io/2048-zen/"><strong>2048 Zen</strong> The easiest 2048 variation ever.</a>
+          <a href="https://frankh.github.io/2048/"><strong>2048 +-*/</strong> When 2048 and mathematics combine...</a>
+          <a href="https://true65536.github.io/65536/size2x3"><strong>Broken 2x3</strong> 2048 2x3, but the last column is a "storage" where you can't merge or move tiles. Goal is 16.</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
