@@ -35,15 +35,18 @@ function stopMovement() {
 }
 
 function hhh() {
-  ass++;
   if (ass === 0) {
     game.move(0);
+    ass++;
   } else if (ass === 1) {
     game.move(1);
+    ass++;
   } else if (ass === 2) {
     game.move(2);
+    ass++;
   } else if (ass === 3) {
     game.move(3);
+    ass++;
   } else {
     ass = 0;
   }
