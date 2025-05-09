@@ -52,6 +52,10 @@ function hhh() {
   }
 }
 
+function fuck() {
+  game.move(Math.floor(Math.random()*4));
+}
+
 // Restart the game
 GameManager.prototype.restart = function () {
   this.storageManager.clearGameState();
