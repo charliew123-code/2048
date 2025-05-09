@@ -3,7 +3,8 @@ var game;
 function runApplication() {
   game = new GameManager(4, KeyboardInputManager, HTMLActuator, LocalStorageManager);
   var storage = new LocalStorageManager();
-}function GameManager(size, InputManager, Actuator, StorageManager) {
+}
+function GameManager(size, InputManager, Actuator, StorageManager) {
   this.size           = size; // Size of the grid
   this.inputManager   = new InputManager;
   this.storageManager = new StorageManager;
