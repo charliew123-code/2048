@@ -18,6 +18,7 @@ function runApplication() {
   this.setup();
 }
 var mover = undefined;
+var ass = 0;
 
 function doMovementPattern(moveType) {
   if (typeof(mover) != 'undefined') {
@@ -34,7 +35,18 @@ function stopMovement() {
 }
 
 function hhh() {
-  game.move(Math.floor(Math.random() * 4));
+  ass++;
+  if (ass === 0) {
+    game.move(0);
+  } else if (ass === 1) {
+    game.move(1);
+  } else if (ass === 2) {
+    game.move(2);
+  } else if (ass === 3) {
+    game.move(3);
+  } else {
+    ass = 0;
+  }
 }
 
 // Restart the game
