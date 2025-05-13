@@ -228,6 +228,9 @@ GameManager.prototype.move = function (direction) {
 
     if (!this.movesAvailable()) {
       this.over = true; // Game over!
+      this.storageManager.clearGameState();
+      this.actuator.continueGame(); // Clear the game won/lost message
+      this.setup();
     }
 
     this.actuate();
