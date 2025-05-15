@@ -1,3 +1,4 @@
+
 window.requestAnimationFrame(function(){runApplication()})
 function runApplication() {
   new GameManager(3, KeyboardInputManager, HTMLActuator, LocalStorageManager);
@@ -169,10 +170,10 @@ GameManager.prototype.move = function (direction) {
 
         // Only one merger per row traversal?
         if (next && (next.value === tile.value || next.value === -2 || tile.value === -2) && !next.mergedFrom) {
-          if (next.value === -2) {
+          if (next.value === -2 || tile.value === -2) {
             merged = new Tile(positions.next, tile.value / 2);
           } else {
-            merged = new Tile(positions.next, Math.max(tile.value * 2, -2));
+            merged = new Tile(positions.next, tile.value * 2);
           }
           merged.mergedFrom = [tile, next];
           if (merged.value === 1 || merged.value === -1) {
